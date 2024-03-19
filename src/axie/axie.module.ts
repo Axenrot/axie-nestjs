@@ -1,4 +1,7 @@
-import { Module } from '@nestjs/common';
+import { Module } from "@nestjs/common";
+import { AxieService } from "./axie.service";
 
-@Module({})
+@Module({
+  providers: [AxieService],
+})
 export class AxieModule {}
